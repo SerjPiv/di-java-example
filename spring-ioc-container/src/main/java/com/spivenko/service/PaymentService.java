@@ -1,13 +1,13 @@
 package com.spivenko.service;
 
 public class PaymentService {
-    private final PaymentProvider applePaymentProvider;
+    private final PaymentProvider paymentProvider;
 
-    public PaymentService(PaymentProvider applePaymentProvider) {
-        this.applePaymentProvider = applePaymentProvider;
+    public PaymentService(PaymentProvider paymentProvider) {
+        this.paymentProvider = paymentProvider;
     }
 
     public void purchaseSubscription() {
-        applePaymentProvider.purchase("Monthly Subscription", 99);
+        paymentProvider.purchase("Monthly Subscription", 99);
     }
 }

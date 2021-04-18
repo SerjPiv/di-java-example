@@ -1,7 +1,7 @@
-package com.spivenko.di.test;
+package com.spivenko.test;
 
-import com.spivenko.service.ApplePaymentProvider;
-import com.spivenko.service.PaymentService;
+import com.spivenko.ApplePaymentProvider;
+import com.spivenko.PaymentService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

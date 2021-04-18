@@ -1,8 +1,8 @@
-package com.spivenko.nodi;
+package com.spivenko;
 
-public class ApplePaymentProvider {
-    public void purchase(String sku, float price) throws InterruptedException {
-        Thread.sleep(10000);
+public class ApplePaymentProvider implements PaymentProvider {
+    @Override
+    public void purchase(String sku, float price) {
         System.out.println("################################################################################");
         System.out.println(String.format("Purchasing item %s with price %s USD from Apple Store", sku, price));
         System.out.println("################################################################################");
