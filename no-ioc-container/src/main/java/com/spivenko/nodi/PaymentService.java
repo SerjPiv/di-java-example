@@ -7,7 +7,7 @@ public class PaymentService {
         this.applePaymentProvider = new ApplePaymentProvider();
     }
 
-    public void purchaseSubscription() {
+    public void purchaseSubscription() throws InterruptedException {
         applePaymentProvider.purchase("Monthly Subscription", 99);
     }
 }

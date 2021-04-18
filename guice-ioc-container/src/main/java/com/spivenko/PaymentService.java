@@ -1,9 +1,14 @@
-package com.spivenko.di;
+package com.spivenko;
+
+import com.google.inject.Inject;
+
+import static com.spivenko.configuration.BindingAnnotations.Google;
 
 public class PaymentService {
     private final PaymentProvider paymentProvider;
 
-    public PaymentService(PaymentProvider paymentProvider) {
+    @Inject
+    public PaymentService(@Google PaymentProvider paymentProvider) {
         this.paymentProvider = paymentProvider;
     }
 
